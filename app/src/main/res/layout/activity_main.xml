@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvName"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:text="@string/name">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        style="@style/defaultEditText"
+        android:hint="@string/enter_nickname_here" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        style="@style/defaultImage"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <ScrollView
+        android:id="@+id/svBio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/marginTop"
+        android:paddingStart="@dimen/padding"
+        android:paddingEnd="@dimen/padding"
+
+        >
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_light"
+            android:text="@string/bio"
+            android:textSize="@dimen/defaultTextSize"
+
+            />
+    </ScrollView>
+
+
+</LinearLayout>

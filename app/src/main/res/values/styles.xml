@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="text">
+        <item name="android:layout_marginTop">@dimen/marginTop</item>
+        <item name="android:fontFamily">@font/roboto_light</item>
+        <item name = "android:textSize">@dimen/defaultTextSize</item>
+    </style>
+
+    <style name="defaultImage">
+        <item name="android:layout_marginTop">@dimen/marginTop</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="defaultEditText" parent="text">
+        <item name="android:layout_marginTop">@dimen/marginTop</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:ems">10</item>
+        <item name="android:inputType">textPersonName</item>
+    </style>
+
+
+</resources>

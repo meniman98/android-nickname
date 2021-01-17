@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">Nickname</string>
-    <string name="name">Huncho Jack</string>
-    <string name="enter_nickname_here">Enter nickname here…</string>
-    <string name="bio">Ayy, Travis Scott\nAyy-ayy-ayy-ayy-ayy, Trav\nYou know what is up, dawg?\nKnow what I\'m talkin\' bout?\ndawg, dawg, one thing for sure\nTwo things for certain, dawg\nWe gon\' keep drinking this lovely lean, dawg\nAnd wearin\' these lovely Rockstar jeans, dawg\nThey want what a dawg can\'t stand\nI know what they can\'t stand\nI know why they mad, dawg\nKnow what I\'m talkin\' \'bout?\nBut we don\'t give a damn, yeah\nWe gon\' keep this massive MAC-11 on deck\nIf any obnoxious individual get out of line\nIf any obnoxious individual want do somethin\', dawg, we can do it, dawg\nKnow what I\'m talkin\' \'bout?</string>
+    <string name="name">Hello, what\'s your nickname?</string>
+    <string name="enter_nickname_here">Huncho Jack…</string>
+    <string name="bio">Ayy,  Travis Scott\nAyy-ayy-ayy-ayy-ayy, Trav\nYou know what is up, dawg?\nKnow what I\'m talkin\' bout?\ndawg, dawg, one thing for sure\nTwo things for certain, dawg\nWe gon\' keep drinking this lovely lean, dawg\nAnd wearin\' these lovely Rockstar jeans, dawg\nThey want what a dawg can\'t stand\nI know what they can\'t stand\nI know why they mad, dawg\nKnow what I\'m talkin\' \'bout?\nBut we don\'t give a damn, yeah\nWe gon\' keep this massive MAC-11 on deck\nIf any obnoxious individual get out of line\nIf any obnoxious individual want do somethin\', dawg, we can do it, dawg\nKnow what I\'m talkin\' \'bout?</string>
+    <string name="done">Done</string>
 
 
 </resources>

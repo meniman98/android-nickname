@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -19,12 +23,22 @@
     </TextView>
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/edName"
         style="@style/defaultEditText"
         android:hint="@string/enter_nickname_here" />
 
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/marginTop"
+        android:fontFamily="@font/roboto_light"
+        android:text="@string/done"
+        android:textSize="@dimen/smallText" />
+
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/ivAndroid"
         style="@style/defaultImage"
         app:srcCompat="@mipmap/ic_launcher_round" />
 
@@ -40,7 +54,7 @@
 
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/tvBio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto_light"
@@ -52,3 +66,5 @@
 
 
 </LinearLayout>
+
+</layout>

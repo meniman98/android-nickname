@@ -13,6 +13,9 @@ class MainActivity : AppCompatActivity() {
     // right here, the binding variable is made before the onCreate function
     private lateinit var binding: ActivityMainBinding
 
+    // Instance of MyName data class.
+    private val name: MyName = MyName("Huncho Jack")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_main)
@@ -20,6 +23,11 @@ class MainActivity : AppCompatActivity() {
         // to the layout of the xml file. this is the equivalent to using setContentView()
         // so make sure you remove the setContentView() function
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        binding.myName = name
+
+
+
+
 
         binding.btnDone.setOnClickListener {
             addNickname(it)

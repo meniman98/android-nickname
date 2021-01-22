@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<layout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -12,69 +11,67 @@
             type="com.example.nickname.MyName" />
     </data>
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/tvName"
-        style="@style/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-
-        android:text="@={`hi `+ myName.defaultName}"
-
-
-        tools:text="Nickname">
-
-    </TextView>
-
-    <EditText
-        android:id="@+id/edName"
-        style="@style/defaultEditText"
-        android:hint="@string/enter_nickname_here" />
-
-    <Button
-        android:id="@+id/btnDone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="@dimen/marginTop"
-        android:fontFamily="@font/roboto_light"
-        android:text="@string/done"
-        android:textSize="@dimen/smallText" />
-
-    <ImageView
-        android:id="@+id/ivAndroid"
-        style="@style/defaultImage"
-        app:srcCompat="@mipmap/ic_launcher_round" />
-
-    <ScrollView
-        android:id="@+id/svBio"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/marginTop"
-        android:paddingStart="@dimen/padding"
-        android:paddingEnd="@dimen/padding"
-
-        >
-
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
         <TextView
-            android:id="@+id/tvBio"
-            android:layout_width="match_parent"
+            android:id="@+id/tvName"
+            style="@style/text"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text='@{"Hello there " + myName.defaultName}'
+
+            tools:text="Nickname">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/edName"
+            style="@style/defaultEditText"
+            android:hint="@string/enter_nickname_here" />
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/marginTop"
             android:fontFamily="@font/roboto_light"
-            android:text="@string/bio"
-            android:textSize="@dimen/defaultTextSize"
+            android:text="@string/done"
+            android:textSize="@dimen/smallText" />
 
-            />
-    </ScrollView>
+        <ImageView
+            android:id="@+id/ivAndroid"
+            style="@style/defaultImage"
+            app:srcCompat="@mipmap/ic_launcher_round" />
+
+        <ScrollView
+            android:id="@+id/svBio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/marginTop"
+            android:paddingStart="@dimen/padding"
+            android:paddingEnd="@dimen/padding"
+
+            >
 
 
-</LinearLayout>
+            <TextView
+                android:id="@+id/tvBio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_light"
+                android:text="@string/bio"
+                android:textSize="@dimen/defaultTextSize"
+
+                />
+        </ScrollView>
+
+
+    </LinearLayout>
 
 </layout>

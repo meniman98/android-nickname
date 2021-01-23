@@ -17,6 +17,7 @@
         android:orientation="vertical"
         tools:context=".MainActivity">
 
+
         <TextView
             android:id="@+id/tvName"
             style="@style/text"
@@ -32,6 +33,7 @@
         <EditText
             android:id="@+id/edName"
             style="@style/defaultEditText"
+            android:layout_width="wrap_content"
             android:hint="@string/enter_nickname_here" />
 
         <Button
@@ -65,8 +67,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_light"
-                android:text="@string/bio"
+                android:text="@{@string/bio(myName.defaultName)}"
                 android:textSize="@dimen/defaultTextSize"
+                tools:text = "The Bio goes here"
 
                 />
         </ScrollView>

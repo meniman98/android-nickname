@@ -21,3 +21,37 @@ binding.apply {
 myTextView.setText("Hello there")
 myPurpleButton.setOnClickListener() { ello() }
 }
+```
+
+### Using a model within your xml layout
+1. Create a tag 
+```
+<data>
+  <variable>
+    name = "myDataModel"
+    type = "com.example.nickname.MyName"
+  </variable>
+</data>
+``` 
+myDataModel is your object, so myDataModel.firstName or myDataModel.lastName will work. "name" is simply the name of your object. The "MyName" is the class of your model. 
+If you're using Kotlin (which you should) it'll be a data class, if you're using Java then it's a class
+
+
+2. Lets use the myDataModel.firstName in a textview. This is how ```android:text='@{"Hello there " + myDataModel.firstName}' ``` Now this will appear as
+"Hello there Huncho" on the textview, pretty cool! You've now used a property from an object within a textview, rather than hard coding it. For many reasons, this approach
+is far better than hard coding a string
+
+
+3. To concatenate strings within strings.xml, you use ``` android:text="@{@string/bio(myDataModel.firstName)}" ``` then at the same time set your string in strings.xml
+to something like ``` <string name="bio">Hello there %1$s, how is your day going? ``` This allows your strings to be dynamic and allow concatenation to be done
+
+### Making a data model
+In Kotlin, the code to make a data class is something like
+```
+data class MyName(
+    var defaultName: String = "Travis Scott"
+)
+```
+You can either leave the string empty by doing ```String = "" ``` or fill in a default value. Kotlin won't accept it if you leave it unassigned, so something like this
+``` var defaultName: String ``` wouldn't work. Pretty annoying I guess. In Java, it is possible to leave object variables unassigned. I assume Kotlin doesn't like to it because
+it could cause null reference errors

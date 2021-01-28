@@ -23,6 +23,11 @@ myPurpleButton.setOnClickListener() { ello() }
 }
 ```
 
+You can alternatively use ```val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)``` straight away in the onCreate() function,
+for fragments use ```val binding: FragmentTitleBinding = DataBindingUtil.inflate(
+                inflater, R.layout.fragment_title, container, false)
+        return binding.root``` within the onCreateView() function
+
 ### Using a model within your xml layout
 1. Create a tag 
 ```
@@ -55,3 +60,4 @@ data class MyName(
 You can either leave the string empty by doing ```String = "" ``` or fill in a default value. Kotlin won't accept it if you leave it unassigned, so something like this
 ``` var defaultName: String ``` wouldn't work. Pretty annoying I guess. In Java, it is possible to leave object variables unassigned. I assume Kotlin doesn't like to it because
 it could cause null reference errors
+
